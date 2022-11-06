@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 1 px solid red;
+   
+    
+}
+
+body{
+    background-color: burlywood;
+    border: 1 px solid red;
+}
+
+
+/************************************************/
+
+
+@font-face{
+
+    font-family: "Roboto-Black";
+    src:url(../polices/Roboto-Black.ttf)
+}
+
+/************************************************/
+
+@font-face{
+
+    font-family: "Roboto-BlackItalic";
+    src: url(../polices/Roboto-BlackItalic.ttf);
+}
+
+/************************************************/
+
+
+html{
+	scroll-behavior: smooth;
+}
+
+/************************************************/
+
+
+#header h1{
+    color: black;
+    font-family: "Roboto-Black";
+    font-size: 5rem;
+    text-align:center;
+}
+
+
+
+/************************************************/
+
+
+
+#header{
+    background-color: brown;
+	padding:15px 1%;
+	display: flex;          /* passage en mode flex */
+    flex-wrap:wrap;
+	justify-content: space-between; /* ne marche que parce-que il y a display flex avant space beetwen alignement horizontal en flex */
+	align-items: center; /* alignement vertical*/
+	position: fixed; /* pour rendre le header fixe quant on scroll */
+	top: 0;          /* toujours mettre apres position pour que le header soit bien placé sur tout les navigateurs */
+	left: 0;
+	width: 100%;    /* pour que le header prenne 100% de la page */
+	z-index: 1000;  /* pour que le header reste toujours devant */ 
+    }
+
+
+
+
+/************************************************/
+#logo{
+    text-align:center;
+    width:15%;
+}
+
+#logo img{
+width: 100%;
+}
+
+
+/************************************************/
+
+
+#menu ul li a{
+   
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: "Roboto-Black";
+    font-size: 30px;
+    
+}
+
+/***************************************************/
+
+#menu ul li {
+
+    list-style: none;
+    padding: 10px;
+    margin:30px;
+}
+
+ #menu ul li a:hover{
+
+    background-color: whitesmoke;
+    border-radius: 15px;
+ }
+
+/************************************************/
+
+
+#video{
+    display:flex;
+    flex-wrap:wrap;
+    padding:300px 15% 20px;
+    background-color:#000;
+    
+}
+
+/************************************************/
+
+#video h1{
+    text-align: center;
+    width:100%;
+    font-family: "Roboto-BlackItalic";
+    font-size:4rem;
+    padding:20px 0;
+    color:#fff;
+}
+
+
+/************************************************/
+
+#video video{
+
+   width:100%;
+
+}
+
+/************************************************/
+
+.cv{
+
+    width: 70%;
+    display:block;
+    margin: auto;
+    padding: 20px;
+
+}
+
+
+/************************************************/
+
+
+.cvverso{
+
+    width: 70%;
+    display:block;
+    margin: auto;
+    padding: 20px;
+
+}
+
+
+/************************************************/
+
+
+#footer{
+
+    font-family: "Roboto-BlackItalic";
+    font-size: 90px;
+    background-color: brown;
+    text-align: center;
+  
+
+}
+
+
+/*********************************************************************************************/
+
+
+@media screen and (max-width:768px) {
+
+
+/************************************************/
+#header{
+    justify-content:center;
+}
+
+#header h1 {
+    width:auto;
+    font-size: 3rem;
+}
+
+
+/************************************************/
+
+
+#logo{
+
+    width: 20%;
+
+}
+
+
+/************************************************/
+
+
+#menu{
+
+display:none;
+
+}
+
+
+/************************************************/
+
+
+#video{
+
+    color: white;
+    background-color: black;
+    
+    margin-top: 350px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+    
+}
+
+
+
+
+/************************************************/
+
+#video h1{
+
+    text-align: center;
+    margin: 10px;
+    font-family: "Roboto-BlackItalic";
+    font-size: 30px;
+ 
+}
+
+/************************************************/
+main h2 {
+
+    position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+padding-top: 25px;
+height: 0;
+}
+
+/************************************************/
+
+
+h2 video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+
+ 
+ }
+
+/************************************************/
+
+.cv{
+
+    width: 90%;
+    display:block;
+    margin: auto;
+    padding: 20px;
+
+}
+
+
+
+
+.cvverso{
+
+    width: 90%;
+    display:block;
+    margin: auto;
+    padding: 20px;
+
+}
+
+/************************************************/
+
+ #footer{
+
+    font-family: "Roboto-BlackItalic";
+    font-size: 50px;
+    background-color: brown;
+    text-align: center;
+  
+
+}
+
+
+}
